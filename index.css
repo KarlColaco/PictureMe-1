@@ -1,5 +1,6 @@
 
 body {
+font-family: Arial, Helvetica, sans-serif;
 
 }
 table,th,td {
@@ -17,7 +18,7 @@ th,td {
 
     width:100%;
     height:10%;
-    background-color: #748B99;
+    background-color: rgb(209, 209, 209);
 }
 #PgName{
     text-align: center;
@@ -25,14 +26,13 @@ th,td {
 }
 #logo{
     float:left;
-    margin-left: 10px;
-    margin-top: 10px;
+  
     
   
 }
 .NavBar{
     float: left;
-    background-color: #748B99;
+    background-color: white;
 }
 .NavBar a {
     float: left;
@@ -54,8 +54,41 @@ position:relative;
     float: Left;
     display: block;
 }
+.NavBar a:hover{
+    background-color: rgb(209, 209, 209);
+}
 .NavBar.responsive a {
     float: none;
     display: block;
     text-align: left;
+}
+.AlbumPreviews{
+    width: 95%;
+    height: 100%;
+    padding: 14px 16px;
+    border-radius:50px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+#Album{
+    width: auto;
+    height: 20%;
+    padding: 14px 16px;
+    border-radius:50px;
+    background-color: rgba(219, 218, 218, 0.884);
+
+    margin-right: 10%;
+
+}
+#Icon{
+    
+    width:20%;
+    height:98%;
+    background-color:rgba(209, 209, 209, 0.89);
+    margin-left: 20px;
+    float:left;
+    
+    
 }
