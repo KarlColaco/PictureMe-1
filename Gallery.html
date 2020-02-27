@@ -12,21 +12,56 @@ function ShowMenu() {
     x.className = "NavBar";
   }
 }
+
+function addAlbum(){
+  var Album = document.createElement("div");
+  Album.id="Album";
+  Album.style.background = "rgba(219, 218, 218, 0.884";  
+  Album.style.height = "20%";
+  Album.style.marginRight = "10%";
+  Album.style.padding= "14px 16px";
+  Album.style.borderRadius= "50px";
+  Album.style.marginTop = "10px";
+  Album.style.marginRight = "10%"
+  document.getElementById("AlbumPreviews").appendChild(Album);
+  
+  for (var i = 0;i<4;i++){
+    var Img = document.createElement("div");
+    Img.style.background = "rgba(209, 209, 209, 0.89)";
+    Img.style.width="20%";
+    Img.style.height="98%";
+    Img.style.marginLeft = "20px";
+    Img.style.float = "left";
+    Img.innerHTML = "This is a preview...";   
+    Img.style.display="flex";
+    Img.style.justifyContent="center";
+    Img.style.alignItems="center";  
+    document.getElementById("Album").appendChild(Img); 
+    
+    
+    }
+    
+
+}
+
 </script>
 
 
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font-->
-<title>Webstie Frame</title>
+<title>Gallery</title>
 </head>
 
 <body>
+  
     <div class ="Frame">
-    <div class="Header">
 
-        <div id = "logo">Logo</div>
-        <div id = "PgName">Gallery</div>
+    <div class="Header">
+      <div id = "Logo"><img src="Images/PictureMe_logo.png" height="80%" width="30%"></div>
+        <div id = "PgName">Gallery</div><br>
+
 
     </div>
+  
     <div class = "NavBar" id =myNav>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowMenu()">&#9776;</a>
         <a href = "Account.html">Account</a><br>
@@ -36,34 +71,13 @@ function ShowMenu() {
     </div>
 
     <div class ="content">
-      <div class = "AlbumPreviews">
-        <p>This is an album</p>
-        <div id = "Album">
-        <div id = "Icon">
-          
-          </div>  
-          <div id = "Icon">
-            <div id = "img">
-              
-              </div>
-          </div>  
-          <div id = "Icon">
-          </div>  
-          <div id = "Icon">
-          </div>  
 
-      </div>
-    
-        <p>This is an album</p>
-        <div id = "Album">
-        <div id = "Icon">
-          </div>  
-          <div id = "Icon">
-          </div>  
-          <div id = "Icon">
-          </div>  
-          <div id = "Icon">
-          </div>  
+      <div id = "AlbumPreviews">
+      <div id = "Add">
+        
+        <a href="javascript:void(0);"class="icon"onclick="addAlbum()">&#10133;</a>
+        </div>
+        
 
       </div>
       </div>
@@ -72,7 +86,6 @@ function ShowMenu() {
         
 
      </div>
-    </div>
 </body>
 
 
