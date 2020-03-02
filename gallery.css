@@ -1,0 +1,42 @@
+
+#AlbumPreviews{
+    width: 95%;
+    height: 100%;
+    padding: 14px 16px;
+    border-radius:50px;
+}
+.Add{
+    width: 80%;
+    height: auto;
+    font-size: xx-large;
+    padding: 14px 16px;
+    border-radius:50px;
+    background-color: rgba(219, 218, 218, 0.884);
+    text-align: center;
+    align-self: center;
+    margin-left: 10%;
+}
+#PreviewImg{
+    width:20%;
+    height:98%;
+    background-color:rgba(209, 209, 209, 0.89);
+    margin-left: 20px;
+    float:left;
+}
+.form-popup {
+    display: none;
+    width: 80%;
+    height:60%;
+    position: fixed;
+    z-index: 9;
+    border: 3px solid #f1f1f1;
+    margin-left:10%;
+  }
+  
+  .form-container {
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+  }

@@ -22,7 +22,6 @@ th,td {
 #PgName{
     text-align: center;
     align-self: center;
-    margin-right: 30%;
  
 }
 #logo{
@@ -30,9 +29,7 @@ th,td {
     height :auto;
     width :auto;
     float:left;
-  
-    
-  
+ 
 }
 .NavBar{
     float: left;
@@ -67,33 +64,3 @@ position:relative;
     text-align: left;
 }
 
-#AlbumPreviews{
-    width: 95%;
-    height: 100%;
-    padding: 14px 16px;
-    border-radius:50px;
-    
-}
-
-#Add{
-    width: 5%;
-    height: 5%;
-    font-size: xx-large;
-    padding: 14px 16px;
-    border-radius:50px;
-    background-color: rgba(219, 218, 218, 0.884);
-    margin-left: 40%;
-    
-
-
-}
-#PreviewImg{
-    
-    width:20%;
-    height:98%;
-    background-color:rgba(209, 209, 209, 0.89);
-    margin-left: 20px;
-    float:left;
-    
-    
-}
