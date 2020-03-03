@@ -1,0 +1,70 @@
+<HTML>
+<head>
+<link rel ="stylesheet" type = "text/css" href = "index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/PictureMe_logo.png" type="image/png" sizes="16x16">
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font-->
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>
+</head>
+
+<body>
+<header>
+	<div class ="Frame"></div>
+    <div class="Header">
+
+        
+		<img class="logo" src="images/PictureMe_logo.png">
+        <div id="PgName">Picture Me</div>
+
+    </div>
+    
+	
+	<div class = "NavBar" id =myNav>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowMenu()">&#9776;</a>
+	<a href = "account.html">Account</a>
+    <a href = "orderfrom.html">Order Form</a>
+    <a href = "gallery.html">Gallery</a>
+    <a href = "upgrades.html">Upgrades</a>
+    <a href = "signin.html">Sign out</a> <br>                    
+	</div>
+       
+        <div class="container">
+            <form action="" method="post" name="orderform">
+			
+				<h1>Order Form </h1>
+                <label class="form-check-label">* Name:</label>
+                <input type="text" name="name" id="name" class="form-control"/></br>
+                <label class="form-check-label">* Email Address:</label>
+                <input type='text' name='email' id='email' class="form-control"/></br>
+                <label class="form-check-label">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" class="form-control"/></br>
+                <label class="form-check-label">* Address:</label>
+                <input type="text" name="address" id="address" class="form-control"/></br>
+                <label class="form-check-label">* Postcode:</label>
+                <input type="text" name="postcode" id="postcode" class="form-control"/></br>
+                <label class="form-check-label">*Select Product:</label>
+                <select name="product" id="product" class="form-control">
+                    <option value="0"></option>
+                    <option value="1"> Package 1 </option>
+					<option value="1"> Package 2 </option>
+					<option value="1"> Package 3 </option>
+                    
+                </select>
+                			
+                <label class="form-check-label">Additional Information:</label>
+                <textarea cols="40" rows="5" name="information" id="information" class="form-control"></textarea></br>
+                <div class="g-recaptcha" data-sitekey="6LcFFNAUAAAAAPD1Rk5sD738vlrbPC7YczecwGgp"></div>
+                <small class="form-text text-muted">*Captcha will only work when running from localhost.</small></br>
+				<input type="button" value="Submit" onclick="contactSubmit(this.form, this.form.name, this.form.email, this.form.phoneNumber, this.form.address, this.form.postcode, this.form.product, this.form.information, grecaptcha.getResponse());" class="btn btn-primary"/>
+				      
+	  			
+        </div>
+		
+ </div>
+     </div>
+    </div>
+</body>
+</header>
+
+</HTML>
